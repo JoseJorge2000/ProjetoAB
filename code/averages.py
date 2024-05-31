@@ -1,7 +1,7 @@
 import csv
 
 # Open the file in read mode
-with open("Resultados_test.csv", "r") as file:
+with open("Resultados_test1.csv", "r") as file:
     reader = csv.reader(file)
     data = list(reader)
 
@@ -50,7 +50,7 @@ for row in data:
     algorithm_counts[algorithm] += 1
 
 # Open the file in append mode
-with open("Resultados_test.csv", "a", newline="") as file:
+with open("Resultados_test1.csv", "a", newline="") as file:
     writer = csv.writer(file)
 
     # Write the averages for each file prefix and algorithm

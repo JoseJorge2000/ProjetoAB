@@ -3,10 +3,11 @@ import time
 import csv
 
 def run_docker_for_files(filenames, output, method):
+    dir = f"C:/Users/Utilizador/Desktop/"
     execution_times = []
     for filename in filenames:
         # Define the Docker command
-        docker_command = f"docker run -v C:/Users/Utilizador/Desktop/AB/code/Datasets:/data -v C:/Users/Utilizador/Desktop/AB/code/{output}:/output biocontainers/{method}:v1-3.8.1551-2-deb_cv1 {method} -in /data/{filename} -out /output/{filename.replace('.fna', '_out.fna')}"
+        docker_command = f"docker run -v {dir}ProjetoAB/code/Datasets:/data -v {dir}AB/code/{output}:/output biocontainers/{method}:v1-3.8.1551-2-deb_cv1 {method} -in /data/{filename} -out /output/{filename.replace('.fna', '_out.fna')}"
 
         # Measure the time taken by Docker command
         start_time = time.time()
