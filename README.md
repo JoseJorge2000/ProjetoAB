@@ -6,6 +6,7 @@
 - [António Goulão](https://github.com/Agoulao)
 
 ## Efetuar alinhamento
+Dentro da pasta `code`
 Cada um dos ficheiros `kalign.py`, `tcoffee.py`, `clustalw.py` e `muscle.py` gera, na sua respetiva pasta, o resultado de todos os ficheiros presentes na pasta `/Datasets` em formato FASTA.
 Para cada ficheiro será necessário mudar a diretoria na função `run_docker_for_files`, na variável `dir`.
 
@@ -41,9 +42,10 @@ Comando para adicionar as médias:
 ```
 python averages.py
 ```
-
+Os ficheiros `Resultados_obtidos.csv` apresenta os resultados que nós obtemos.
+As tabelas encontram-se no ficheiro `Resultados_obtidos_tabelas.csv`.
 ## Resumo dos passos:
-Para cada ficheiro será necessário mudar a diretoria na função run_docker_for_files, na variável dir.
+Dentro da pasta `code`
 
 Gerar alinhamentos:
 ```
@@ -52,6 +54,9 @@ python tcoffee.py
 python clustalw.py
 python muscle.py
 ```
+Para cada ficheiro será necessário mudar a diretoria na função run_docker_for_files, na variável dir.
+
+
 Avaliar alinhamentos:
 ```
 python score.py
