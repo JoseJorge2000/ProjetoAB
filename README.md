@@ -42,7 +42,8 @@ Comando para adicionar as médias:
 ```
 python averages.py
 ```
-Os ficheiros `Resultados_obtidos.csv` apresenta os resultados que nós obtemos.
+O ficheiro `Resultados_obtidos.csv` apresenta os resultados que nós obtemos.
+
 As tabelas encontram-se no ficheiro `Resultados_obtidos_tabelas.csv`.
 ## Resumo dos passos:
 Dentro da pasta `code`
