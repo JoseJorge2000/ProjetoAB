@@ -44,6 +44,7 @@ python averages.py
 
 ## Resumo dos passos:
 Gerar alinhamentos:
+Para cada ficheiro será necessário mudar a diretoria na função run_docker_for_files, na variável dir.
 ```
 python kalign.py
 python tcoffee.py
