@@ -7,6 +7,7 @@
 
 ## Efetuar alinhamento
 Cada um dos ficheiros `kalign.py`, `tcoffee.py`, `clustalw.py` e `muscle.py` gera, na sua respetiva pasta, o resultado de todos os ficheiros presentes na pasta `/Datasets` em formato FASTA.
+Para cada ficheiro será necessário mudar a diretoria na função `run_docker_for_files`, na variável `dir`.
 
 Para kalign:
 ```
